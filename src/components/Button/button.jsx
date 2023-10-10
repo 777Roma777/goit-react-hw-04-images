@@ -1,7 +1,7 @@
 import React from 'react';
 import css from './button.module.css';
 
-export default   function Button({ onClick, disabled }) {
+const Button = ({ onClick, disabled }) => {
   return (
     <div className={css['button-container']}>
       <button
@@ -15,4 +15,4 @@ export default   function Button({ onClick, disabled }) {
     </div>
   );
 }
-
+export default Button;

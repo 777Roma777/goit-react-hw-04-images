@@ -1,12 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import css from './imageGallery.module.css';
 
-export default class ImageGallery extends Component {
-  render() {
-    return (
-      <ul className={css.ImageGallery}>
-        {this.props.children}
-      </ul>
-    );
-  }
-}
+const ImageGallery = ({children}) => {
+  return <ul className={css.ImageGallery}>{children}</ul>;
+};
+
+export default ImageGallery;

@@ -1,7 +1,7 @@
 import React from 'react';
 import css from './imageGalleryItem.module.css';
 
-export default function ImageGalleryItem({ src, alt, onClick, largeImageURL }) {
+const ImageGalleryItem = ({ src, alt, onClick, largeImageURL }) => {
   const handleClick = () => {
     onClick(largeImageURL);
   };
@@ -17,3 +17,4 @@ export default function ImageGalleryItem({ src, alt, onClick, largeImageURL }) {
     </li>
   );
 }
+export default ImageGalleryItem;
